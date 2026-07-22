@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/embed.manifest"

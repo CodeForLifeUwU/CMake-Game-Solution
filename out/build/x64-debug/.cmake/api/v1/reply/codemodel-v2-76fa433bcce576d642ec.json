@@ -1,0 +1,214 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "OpenGL::GL::@8fffc3aaf7d09f4644d7",
+					"jsonFile" : "target-OpenGL__GL-Debug-0c7f645d8536414e8850.json",
+					"name" : "OpenGL::GL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "OpenGL::GLU::@8fffc3aaf7d09f4644d7",
+					"jsonFile" : "target-OpenGL__GLU-Debug-bdfdd37c028d628b5741.json",
+					"name" : "OpenGL::GLU",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Threads::Threads::@a2c0e7a9b33c21ca6266",
+					"jsonFile" : "target-Threads__Threads-Debug-67c772b6ddd69aaed7aa.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 1
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1
+					],
+					"build" : "BasicLighting",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-BasicLighting-Debug-3cadbfdd1d841cb78266.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "BasicLighting",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "BasicLighting/external/glfw-3.4",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-BasicLighting.external.glfw-3.4-Debug-f6dbf5d0c064720bb267.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "BasicLighting/external/glfw-3.4",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "BasicLighting/external/glfw-3.4/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-BasicLighting.external.glfw-3.4.src-Debug-ff073f5c410a92a4d334.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "BasicLighting/external/glfw-3.4/src",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				},
+				{
+					"build" : "BasicLighting/external/glfw-3.4/docs",
+					"jsonFile" : "directory-BasicLighting.external.glfw-3.4.docs-Debug-931526dc0372d42f3337.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "BasicLighting/external/glfw-3.4/docs"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1
+					],
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "CMake Game Solution",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "BasicLighting::@8fffc3aaf7d09f4644d7",
+					"jsonFile" : "target-BasicLighting-Debug-1c94b77f2480ea77bf24.json",
+					"name" : "BasicLighting",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@5dd5493e7fc31ee6808a",
+					"jsonFile" : "target-glfw-Debug-0a779d8b688a9c9b3808.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@a2c0e7a9b33c21ca6266",
+					"jsonFile" : "target-uninstall-Debug-d6827a874297289f7cef.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@5dd5493e7fc31ee6808a",
+					"jsonFile" : "target-update_mappings-Debug-51de5226ded5c86da872.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+		"source" : "C:/Users/asus/Ron Games Base/CMake Game Solution"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/cmake_install.cmake",
+		"C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/cmake_install.cmake",
+		"C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/cmake_install.cmake",
+		"C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/cmake_install.cmake",
+		"C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

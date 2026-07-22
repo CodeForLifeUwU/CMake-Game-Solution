@@ -39,13 +39,13 @@ namespace Engine {
 			translation = glm::translate(translation, translationVector);
 		}
 		void scale(const glm::vec3& scaleVector) {
-			model = glm::scale(model, scaleVector);
+			scalation = glm::scale(scalation, scaleVector);
 		}
 		void rotate(float angle, const glm::vec3& axis) {
 			rotation = glm::rotate(rotation, glm::radians(angle), axis);
 		}
 		void updateModelMatrix() {
-			model = translation * rotation;
+			model = translation * rotation * scalation;
 			if(pBoundProgram) pBoundProgram->setMat4("model", model);
 		}
 		void draw();
@@ -60,6 +60,7 @@ namespace Engine {
 
 		glm::mat4 translation = glm::mat4(1.0f);
 		glm::mat4 rotation = glm::mat4(1.0f);
+		glm::mat4 scalation = glm::mat4(1.0f);
 
 		glm::mat4 model = glm::mat4(1.0f);
 

@@ -1,0 +1,12 @@
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/CMakeFiles/INSTALL.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/CMakeFiles/BasicLighting.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/CMakeFiles/INSTALL.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/external/glfw-3.4/CMakeFiles/uninstall.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/external/glfw-3.4/CMakeFiles/INSTALL.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/external/glfw-3.4/CMakeFiles/ALL_BUILD.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/external/glfw-3.4/src/CMakeFiles/update_mappings.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/external/glfw-3.4/src/CMakeFiles/INSTALL.dir
+C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/external/glfw-3.4/docs/CMakeFiles/INSTALL.dir

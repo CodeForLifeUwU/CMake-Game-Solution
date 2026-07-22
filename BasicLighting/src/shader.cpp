@@ -6,6 +6,8 @@
 #include <sstream>
 #include <iostream>
 
+#include <filesystem>
+
 bool Engine::Shader::checkSuccess() {
 	return success == GL_TRUE;
 }
@@ -75,6 +77,16 @@ Engine::Shader::Shader(std::string name, const char* vertexPath, const char* fra
 	fShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
 	try
 	{
+		
+
+std::cout << "Current working directory: "
+          << std::filesystem::current_path() << '\n';
+
+std::cout << "Vertex exists? "
+          << std::filesystem::exists(vertexPath) << '\n';
+
+std::cout << "Fragment exists? "
+          << std::filesystem::exists(fragmentPath) << '\n';
 		// open files
 		vShaderFile.open(vertexPath);
 		fShaderFile.open(fragmentPath);
@@ -92,6 +104,9 @@ Engine::Shader::Shader(std::string name, const char* vertexPath, const char* fra
 	catch (std::ifstream::failure e)
 	{
 		std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
+		std::cout << e.what() << std::endl;
+		success = GL_FALSE;
+		return;
 	}
 
 	// Compiling Shaders

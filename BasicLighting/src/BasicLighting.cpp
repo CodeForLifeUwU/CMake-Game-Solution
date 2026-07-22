@@ -1,7 +1,6 @@
 #include "engine.hpp"
 
 // globals
-bool mouseEnteredFirst = false;
 
 struct State {
 	Engine::Camera* pCamera;
@@ -49,18 +48,25 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 	{
 		glm::vec3 direction = pState->pCamera->getDirection();
 		glm::vec3 right = glm::normalize(glm::cross(direction, glm::vec3(0, 1, 0)));
+		glm::vec3 forward = glm::cross(glm::vec3(0, 1, 0), right);
 
-		if (key == GLFW_KEY_D) {
-			pCamera->speed = right;
+		if (key == GLFW_KEY_W) {
+			pCamera->speed = forward;
 		}
 		else if (key == GLFW_KEY_A) {
 			pCamera->speed = -right;
 		}
-		else if (key == GLFW_KEY_W) {
-			pCamera->speed = glm::normalize(direction);
-		}
 		else if (key == GLFW_KEY_S) {
-			pCamera->speed = -glm::normalize(direction);
+			pCamera->speed = -forward;
+		}
+		else if (key == GLFW_KEY_D) {
+			pCamera->speed = right;
+		}
+		else if (key == GLFW_KEY_E) {
+			pCamera->speed = glm::vec3(0, 1, 0);
+		}
+		else if (key == GLFW_KEY_Q) {
+			pCamera->speed = -glm::vec3(0, 1, 0);
 		}
 	}
 
@@ -75,38 +81,43 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
 	//std::cout << mouseEnteredFirst << std::endl;
-	static double lastX;
-	static double lastY;
+	static double lastX = xpos;
+	static double lastY = ypos;
 
-	if (mouseEnteredFirst) {
-		lastX = xpos;
-		lastY = ypos;
-		mouseEnteredFirst = false;
-	}
 
 	double dx = xpos - lastX;
 	double dy = ypos - lastY;
 
 	//std::cout << "relative: (" << dx << ", " << dy << ")\r";
 	//std::cout << "motion" << xpos << ' ' << ypos << "\n";
-
+	
 	State* pState = static_cast<State*>(glfwGetWindowUserPointer(window));
-	if (glfwGetMouseButton(pState->pWindow->getWindowPointer(), GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS) {
-		pState->pCamera->rotate((float)dx * 0.1f, (float)dy * 0.1f);
-	}
+
+	float sensitivity = 0.05f;
+	pState->pCamera->rotate(-(float)dx * sensitivity, -(float)dy * sensitivity);
 
 	lastX = xpos;
 	lastY = ypos;
 }
 
-void mouse_enter_callback(GLFWwindow* window, int entered) {
-	mouseEnteredFirst = (bool)entered;
-	//std::cout << "entered " << entered << "\n";
-}
+struct Vertex{
+	glm::vec3 position;
+	glm::vec2 color;
+	glm::vec3 normal;
+};
 
 
 // THE MAIN FUNCTION
 int main() {
+
+	for (int i = 0; i<10;++i){
+		for (int j = 0; j<=i;++j){
+			std::cout << "*";
+		}
+		std::cout << "\n";
+	}
+
+	std::cout << sizeof(Vertex) << std::endl;
 
 	if (!glfwInit()) {
 		std::cerr << "Failed to initialize GLFW" << std::endl;
@@ -145,7 +156,7 @@ int main() {
 
 	
 	// Compiling Shaders
-	Engine::Shader colorShader = Engine::Shader("color", "./color.vert", "./color.frag");
+	Engine::Shader colorShader = Engine::Shader("color", "./shaders/color.vert", "./shaders/color.frag");
 
 	if (not colorShader.checkSuccess()) {
 		std::cerr << "color Shaders did not compile successfully." << std::endl;
@@ -155,70 +166,73 @@ int main() {
 	std::cout << "color Shader compiled successfully" << std::endl;
 
 
-	Engine::Shader floorShader = Engine::Shader("Floor", "./floor.vert", "./floor.frag");
+	// Engine::Shader floorShader = Engine::Shader("Floor", "./floor.vert", "./floor.frag");
 
-	if (not floorShader.checkSuccess()) {
-		std::cerr << "Shaders did not compile successfully." << std::endl;
-		glfwTerminate();
-		return -1;
-	}
-	std::cout << "Floor Shader compiled successfully" << std::endl;
+	// if (not floorShader.checkSuccess()) {
+	// 	std::cerr << "Shaders did not compile successfully." << std::endl;
+	// 	glfwTerminate();
+	// 	return -1;
+	// }
+	// std::cout << "Floor Shader compiled successfully" << std::endl;
 
 
 
 
 	// Camera
-	Engine::Camera camera = Engine::Camera(glm::vec3(0.0f, 2.0f, 3.0f), glm::vec3(0.0f, 2.0f, 0.0f));
+	Engine::Camera camera = Engine::Camera(glm::vec3(0.0f, 2.0f, 4.0f), glm::vec3(0.0f, 2.0f, 0.0f));
 
 	camera.bindShader(colorShader);
-	camera.bindShader(floorShader);
+	//camera.bindShader(floorShader);
 
 
 
-	// Cube
-	std::vector<GLfloat> vertices = {
-		//Positons		  // color Coords
-		-0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
-		 0.5f, -0.5f, -0.5f, 1.0f, 0.0f,
-		 0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-		 0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-		-0.5f, 0.5f, -0.5f, 0.0f, 1.0f,
-		-0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
-		-0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-		0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-		0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
-		0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
-		-0.5f, 0.5f, 0.5f, 0.0f, 1.0f,
-		-0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-		-0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-		-0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-		-0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-		-0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-		-0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-		-0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-		0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-		0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-		0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-		0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-		0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-		0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-		-0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-		0.5f, -0.5f, -0.5f, 1.0f, 1.0f,
-		0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-		0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-		-0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-		-0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-		-0.5f, 0.5f, -0.5f, 0.0f, 1.0f,
-		0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-		0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-		0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-		-0.5f, 0.5f, 0.5f, 0.0f, 0.0f,
-		-0.5f, 0.5f, -0.5f, 0.0f, 1.0f
+	// Cube — six faces, standard Rubik's cube colors (not turnable)
+	std::vector<GLfloat> cubeVertices = {
+		// Positions          // Normals          // Colors
+		// Front (+Z) — green
+		-1.0f, -1.0f,  1.0f,  0.0f,  0.0f,  1.0f,  0.0f, 1.0f, 0.0f,
+		 1.0f, -1.0f,  1.0f,  0.0f,  0.0f,  1.0f,  0.0f, 1.0f, 0.0f,
+		 1.0f,  1.0f,  1.0f,  0.0f,  0.0f,  1.0f,  0.0f, 1.0f, 0.0f,
+		-1.0f,  1.0f,  1.0f,  0.0f,  0.0f,  1.0f,  0.0f, 1.0f, 0.0f,
+		// Back (-Z) — blue
+		 1.0f, -1.0f, -1.0f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f, 1.0f,
+		-1.0f, -1.0f, -1.0f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f, 1.0f,
+		-1.0f,  1.0f, -1.0f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f, 1.0f,
+		 1.0f,  1.0f, -1.0f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f, 1.0f,
+		// Top (+Y) — white
+		-1.0f,  1.0f, -1.0f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f, 1.0f,
+		-1.0f,  1.0f,  1.0f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f, 1.0f,
+		 1.0f,  1.0f,  1.0f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f, 1.0f,
+		 1.0f,  1.0f, -1.0f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f, 1.0f,
+		// Bottom (-Y) — yellow
+		-1.0f, -1.0f,  1.0f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f, 0.0f,
+		-1.0f, -1.0f, -1.0f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f, 0.0f,
+		 1.0f, -1.0f, -1.0f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f, 0.0f,
+		 1.0f, -1.0f,  1.0f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f, 0.0f,
+		// Right (+X) — red
+		 1.0f, -1.0f,  1.0f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,
+		 1.0f, -1.0f, -1.0f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,
+		 1.0f,  1.0f, -1.0f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,
+		 1.0f,  1.0f,  1.0f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,
+		// Left (-X) — orange
+		-1.0f, -1.0f, -1.0f, -1.0f,  0.0f,  0.0f,  1.0f, 0.5f, 0.0f,
+		-1.0f, -1.0f,  1.0f, -1.0f,  0.0f,  0.0f,  1.0f, 0.5f, 0.0f,
+		-1.0f,  1.0f,  1.0f, -1.0f,  0.0f,  0.0f,  1.0f, 0.5f, 0.0f,
+		-1.0f,  1.0f, -1.0f, -1.0f,  0.0f,  0.0f,  1.0f, 0.5f, 0.0f,
+	};
+
+	std::vector<GLuint> cubeIndices = {
+		0,  1,  2,   0,  2,  3,   // front
+		4,  5,  6,   4,  6,  7,   // back
+		8,  9, 10,   8, 10, 11,   // top
+		12, 13, 14,  12, 14, 15,   // bottom
+		16, 17, 18,  16, 18, 19,   // right
+		20, 21, 22,  20, 22, 23,   // left
 	};
 
 	Engine::Model cubeModel = Engine::Model();
 
-	if (!cubeModel.loadModel(vertices)) {
+	if (!cubeModel.loadModel(cubeVertices, cubeIndices)) {
 		std::cerr << "Failed to load cube model" << std::endl;
 		glfwTerminate();
 		return -1;
@@ -228,37 +242,40 @@ int main() {
 
 	cubeModel.bindShader(colorShader);
 
+	float scale = 0.1f;
+	cubeModel.scale(glm::vec3(scale, scale, scale));
+
 	cubeModel.translate(glm::vec3(0.0f, 2.0f, 0.0f));
 	cubeModel.updateModelMatrix();
 
 
 
 
-	std::vector<GLfloat> floorVertices = {
-		10,0,10, 1, 1,0,
-		10,0,-10, 1, 0,0,
-		-10,0,-10, 0, 0,0,
-		-10,0,10, 0, 1,0
-	};
+	// std::vector<GLfloat> floorVertices = {
+	// 	10,0,10, 1, 1,0,
+	// 	10,0,-10, 1, 0,0,
+	// 	-10,0,-10, 0, 0,0,
+	// 	-10,0,10, 0, 1,0
+	// };
 
-	std::vector<GLuint> floorIndices = {
-		0, 1, 2,
-		0, 2, 3
-	};
+	// std::vector<GLuint> floorIndices = {
+	// 	0, 1, 2,
+	// 	0, 2, 3
+	// };
 
-	Engine::Model floorModel = Engine::Model();
+	// Engine::Model floorModel = Engine::Model();
 
-	if (!floorModel.loadModel(floorVertices, floorIndices)) {
-		std::cerr << "Failed to load floor model" << std::endl;
-		glfwTerminate();
-		return -1;
-	}
-	std::cout << "floor model loaded successfully" << std::endl;
-	floorModel.sendModelBuffer();
+	// if (!floorModel.loadModel(floorVertices, floorIndices)) {
+	// 	std::cerr << "Failed to load floor model" << std::endl;
+	// 	glfwTerminate();
+	// 	return -1;
+	// }
+	// std::cout << "floor model loaded successfully" << std::endl;
+	// floorModel.sendModelBuffer();
 
-	floorModel.bindShader(floorShader);
+	// floorModel.bindShader(floorShader);
 
-	floorModel.updateModelMatrix();
+	// floorModel.updateModelMatrix();
 
 
 
@@ -274,7 +291,7 @@ int main() {
 
 	// C++
 
-	//glfwSetWindowUserPointer(window, &camera);
+	glfwSetInputMode(window.getWindowPointer(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glfwSetWindowUserPointer(window.getWindowPointer(), &state);
 
 
@@ -283,7 +300,6 @@ int main() {
 
 	glfwSetCursorPosCallback(window.getWindowPointer(), mouse_callback);
 	glfwSetScrollCallback(window.getWindowPointer(), mouse_scroll_callback);
-	glfwSetCursorEnterCallback(window.getWindowPointer(), mouse_enter_callback);
 
 	glfwSetKeyCallback(window.getWindowPointer(), keyboard_callback);
 
@@ -291,16 +307,18 @@ int main() {
 	camera.update();
 
 	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	// main loop
 	while (!window.getClosingStatus()) {
 
 		camera.translate(2.0f*camera.speed * window.getFrameTime());
 		camera.update();
 
-		float t1 = (float)glfwGetTime();
+		// float t1 = (float)glfwGetTime();
 
-		float rotationAngle = 45.0f * t1;
-		colorShader.setFloat("rotation", rotationAngle);
+		// float rotationAngle = 45.0f * t1;
+		// colorShader.setFloat("rotation", rotationAngle);
 
 		//glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		//glClearColor(0.025f, 0.04f, 0.065f, 1.0f);
@@ -310,7 +328,7 @@ int main() {
 
 		// Draw cube
 		cubeModel.draw();
-		floorModel.draw();
+		//floorModel.draw();
 		//inosukeModel.draw();
 
 		window.swapBuffers();

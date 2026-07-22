@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Ron Games Base\CMake Game Solution\build\CMakeFiles\aed354507a7cbb87379ab85e28cc1be2\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{42E1E4D7-6998-3EFB-89FD-D467EE98D40F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

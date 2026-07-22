@@ -1,0 +1,176 @@
+[
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -IC:\\Libraries\\Assimp\\include -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glm-master\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI /FoBasicLighting\\CMakeFiles\\BasicLighting.dir\\src\\BasicLighting.cpp.obj /FdBasicLighting\\CMakeFiles\\BasicLighting.dir\\ /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\src\\BasicLighting.cpp\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/src/BasicLighting.cpp",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/src/BasicLighting.cpp.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -IC:\\Libraries\\Assimp\\include -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glm-master\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI /FoBasicLighting\\CMakeFiles\\BasicLighting.dir\\src\\Camera.cpp.obj /FdBasicLighting\\CMakeFiles\\BasicLighting.dir\\ /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\src\\Camera.cpp\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/src/Camera.cpp",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/src/Camera.cpp.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -IC:\\Libraries\\Assimp\\include -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glm-master\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI /FoBasicLighting\\CMakeFiles\\BasicLighting.dir\\src\\Engine.cpp.obj /FdBasicLighting\\CMakeFiles\\BasicLighting.dir\\ /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\src\\Engine.cpp\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/src/Engine.cpp",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/src/Engine.cpp.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -IC:\\Libraries\\Assimp\\include -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glm-master\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI /FoBasicLighting\\CMakeFiles\\BasicLighting.dir\\src\\Window.cpp.obj /FdBasicLighting\\CMakeFiles\\BasicLighting.dir\\ /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\src\\Window.cpp\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/src/Window.cpp",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/src/Window.cpp.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -IC:\\Libraries\\Assimp\\include -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glm-master\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI /FoBasicLighting\\CMakeFiles\\BasicLighting.dir\\src\\model.cpp.obj /FdBasicLighting\\CMakeFiles\\BasicLighting.dir\\ /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\src\\model.cpp\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/src/model.cpp",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/src/model.cpp.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -IC:\\Libraries\\Assimp\\include -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glm-master\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI /FoBasicLighting\\CMakeFiles\\BasicLighting.dir\\src\\shader.cpp.obj /FdBasicLighting\\CMakeFiles\\BasicLighting.dir\\ /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\src\\shader.cpp\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/src/shader.cpp",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/src/shader.cpp.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -IC:\\Libraries\\Assimp\\include -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glm-master\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI /FoBasicLighting\\CMakeFiles\\BasicLighting.dir\\src\\stb_image.cpp.obj /FdBasicLighting\\CMakeFiles\\BasicLighting.dir\\ /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\src\\stb_image.cpp\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/src/stb_image.cpp",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/src/stb_image.cpp.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -IC:\\Libraries\\Assimp\\include -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glm-master\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /FoBasicLighting\\CMakeFiles\\BasicLighting.dir\\external\\glad\\src\\gl.c.obj /FdBasicLighting\\CMakeFiles\\BasicLighting.dir\\ /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glad\\src\\gl.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glad/src/gl.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/CMakeFiles/BasicLighting.dir/external/glad/src/gl.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\context.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\context.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/context.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/context.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\init.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\init.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/init.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/init.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\input.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\input.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/input.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/input.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\monitor.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/monitor.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/monitor.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\platform.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\platform.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/platform.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/platform.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\vulkan.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/vulkan.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/vulkan.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\window.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\window.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/window.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/window.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\egl_context.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/egl_context.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/egl_context.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\osmesa_context.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/osmesa_context.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_init.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\null_init.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/null_init.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/null_init.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_monitor.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\null_monitor.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/null_monitor.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/null_monitor.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_window.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\null_window.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/null_window.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/null_window.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_joystick.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\null_joystick.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/null_joystick.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/null_joystick.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_module.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\win32_module.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/win32_module.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/win32_module.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\win32_time.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/win32_time.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/win32_time.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\win32_thread.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/win32_thread.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\win32_init.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/win32_init.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/win32_init.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\win32_joystick.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/win32_joystick.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\win32_monitor.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/win32_monitor.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\win32_window.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/win32_window.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/win32_window.c.obj"
+},
+{
+  "directory": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug",
+  "command": "C:\\PROGRA~1\\MICROS~4\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\include\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\" -I\"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\out\\build\\x64-debug\\BasicLighting\\external\\glfw-3.4\\src\" /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3 /FoBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj /FdBasicLighting\\external\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\glfw.pdb /FS -c \"C:\\Users\\asus\\Ron Games Base\\CMake Game Solution\\BasicLighting\\external\\glfw-3.4\\src\\wgl_context.c\"",
+  "file": "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/external/glfw-3.4/src/wgl_context.c",
+  "output": "C:/Users/asus/Ron Games Base/CMake Game Solution/out/build/x64-debug/BasicLighting/external/glfw-3.4/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
+}
+]

@@ -4,6 +4,7 @@
 
 class Engine::Camera {
 public:
+	//class enum 
 	glm::vec3 speed = { 0, 0, 0 };
 
 	glm::vec3 cameraPos;
@@ -31,7 +32,7 @@ private:
 	int width = 800;
 	int height = 600;
 
-	float aspectRatio = 800.0/600.0;
+	float aspectRatio = (float)(800.0/600.0);
 	float yaw = 180.0f;
 	float pitch = 0;
 

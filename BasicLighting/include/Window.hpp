@@ -20,8 +20,8 @@ public:
 	void swapBuffers();
 
 private:
-	float previous, now;
-	float frametime = 0;
+	double previous, now;
+	double frametime = 0.0;
 
 	GLFWwindow* mWindow = nullptr;
 	const char* mName = "";

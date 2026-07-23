@@ -15,6 +15,8 @@ ${SOURCES}
 set(SHADER_FILES
 	"shaders/color.vert"
 	"shaders/color.frag"
+	"shaders/floor.vert"
+	"shaders/floor.frag"
 )
 
 # Copy shaders to the build output directory whenever they change

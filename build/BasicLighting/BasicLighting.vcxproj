@@ -124,7 +124,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>			</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Debug/shaders"
 if %errorlevel% neq 0 goto :cmEnd
@@ -140,6 +140,28 @@ setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Debug/shaders"
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/color.frag" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Debug/shaders/color.frag"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Debug/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/floor.vert" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Debug/shaders/floor.vert"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Debug/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/floor.frag" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Debug/shaders/floor.frag"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -207,7 +229,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>			</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Release/shaders"
 if %errorlevel% neq 0 goto :cmEnd
@@ -223,6 +245,28 @@ setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Release/shaders"
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/color.frag" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Release/shaders/color.frag"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Release/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/floor.vert" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Release/shaders/floor.vert"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Release/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/floor.frag" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/Release/shaders/floor.frag"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -290,7 +334,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>			</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/MinSizeRel/shaders"
 if %errorlevel% neq 0 goto :cmEnd
@@ -306,6 +350,28 @@ setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/MinSizeRel/shaders"
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/color.frag" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/MinSizeRel/shaders/color.frag"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/MinSizeRel/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/floor.vert" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/MinSizeRel/shaders/floor.vert"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/MinSizeRel/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/floor.frag" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/MinSizeRel/shaders/floor.frag"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -372,7 +438,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>			</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/RelWithDebInfo/shaders"
 if %errorlevel% neq 0 goto :cmEnd
@@ -388,6 +454,28 @@ setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/RelWithDebInfo/shaders"
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/color.frag" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/RelWithDebInfo/shaders/color.frag"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/RelWithDebInfo/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/floor.vert" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/RelWithDebInfo/shaders/floor.vert"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/RelWithDebInfo/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/asus/Ron Games Base/CMake Game Solution/BasicLighting/shaders/floor.frag" "C:/Users/asus/Ron Games Base/CMake Game Solution/build/BasicLighting/RelWithDebInfo/shaders/floor.frag"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

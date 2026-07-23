@@ -1,12 +1,52 @@
 #include "engine.hpp"
 
 // globals
+bool fullscreen = false;
+
+int windowX, windowY;
+int windowWidth, windowHeight;
 
 struct State {
 	Engine::Camera* pCamera;
 	Engine::Window* pWindow;
 };
 // Event Callbacks
+void toggleFullscreen(GLFWwindow* window)
+{
+    fullscreen = !fullscreen;
+
+    if (fullscreen)
+    {
+        // Save current window position and size
+        glfwGetWindowPos(window, &windowX, &windowY);
+        glfwGetWindowSize(window, &windowWidth, &windowHeight);
+
+        GLFWmonitor* monitor = glfwGetPrimaryMonitor();
+        const GLFWvidmode* mode = glfwGetVideoMode(monitor);
+
+        glfwSetWindowMonitor(
+            window,
+            monitor,
+            0, 0,
+            mode->width,
+            mode->height,
+            mode->refreshRate
+        );
+    }
+    else
+    {
+        glfwSetWindowMonitor(
+            window,
+            nullptr,
+            windowX,
+            windowY,
+            windowWidth,
+            windowHeight,
+            0 // use default refresh rate in windowed mode
+        );
+    }
+}
+
 void framebuffer_size_callback(GLFWwindow* window, int w, int h) {
 	if (h > w) {
 		glViewport(0, h / 4, w, w);
@@ -26,7 +66,7 @@ void mouse_scroll_callback(GLFWwindow* window, double xoffset, double yoffset) {
 
 	State* pState = static_cast<State*>(glfwGetWindowUserPointer(window));
 
-	float deltaFOV = yoffset;
+	float deltaFOV = (float)yoffset;
 
 	pState->pCamera->zoom(deltaFOV);
 	pState->pCamera->update();
@@ -37,6 +77,10 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 		glfwSetWindowShouldClose(window, true);
 		return;
 	}
+	if (key == GLFW_KEY_TAB && action == GLFW_PRESS) {
+		toggleFullscreen(window);
+		return;
+	}
 
 	State* pState = static_cast<State*>(glfwGetWindowUserPointer(window));
 
@@ -44,7 +88,7 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 	Engine::Camera* pCamera = pState->pCamera;
 	Engine::Window* pWindow = pState->pWindow;
 
-	if (action == GLFW_PRESS)
+	if (action == GLFW_PRESS or action == GLFW_REPEAT)
 	{
 		glm::vec3 direction = pState->pCamera->getDirection();
 		glm::vec3 right = glm::normalize(glm::cross(direction, glm::vec3(0, 1, 0)));
@@ -126,6 +170,7 @@ int main() {
 	
 	std::cout << "GLFW initialized successfully" << std::endl;
 
+	{
 
 	// Set GLFW window hints
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -166,14 +211,14 @@ int main() {
 	std::cout << "color Shader compiled successfully" << std::endl;
 
 
-	// Engine::Shader floorShader = Engine::Shader("Floor", "./floor.vert", "./floor.frag");
+	Engine::Shader floorShader = Engine::Shader("floor", "./shaders/floor.vert", "./shaders/floor.frag");
 
-	// if (not floorShader.checkSuccess()) {
-	// 	std::cerr << "Shaders did not compile successfully." << std::endl;
-	// 	glfwTerminate();
-	// 	return -1;
-	// }
-	// std::cout << "Floor Shader compiled successfully" << std::endl;
+	if (not floorShader.checkSuccess()) {
+		std::cerr << "floor Shaders did not compile successfully." << std::endl;
+		glfwTerminate();
+		return -1;
+	}
+	std::cout << "floor Shader compiled successfully" << std::endl;
 
 
 
@@ -182,7 +227,7 @@ int main() {
 	Engine::Camera camera = Engine::Camera(glm::vec3(0.0f, 2.0f, 4.0f), glm::vec3(0.0f, 2.0f, 0.0f));
 
 	camera.bindShader(colorShader);
-	//camera.bindShader(floorShader);
+	camera.bindShader(floorShader);
 
 
 
@@ -249,39 +294,9 @@ int main() {
 	cubeModel.updateModelMatrix();
 
 
+	// float t1, t2, dt;
 
-
-	// std::vector<GLfloat> floorVertices = {
-	// 	10,0,10, 1, 1,0,
-	// 	10,0,-10, 1, 0,0,
-	// 	-10,0,-10, 0, 0,0,
-	// 	-10,0,10, 0, 1,0
-	// };
-
-	// std::vector<GLuint> floorIndices = {
-	// 	0, 1, 2,
-	// 	0, 2, 3
-	// };
-
-	// Engine::Model floorModel = Engine::Model();
-
-	// if (!floorModel.loadModel(floorVertices, floorIndices)) {
-	// 	std::cerr << "Failed to load floor model" << std::endl;
-	// 	glfwTerminate();
-	// 	return -1;
-	// }
-	// std::cout << "floor model loaded successfully" << std::endl;
-	// floorModel.sendModelBuffer();
-
-	// floorModel.bindShader(floorShader);
-
-	// floorModel.updateModelMatrix();
-
-
-
-	float t1, t2, dt;
-
-	dt = 0.0f;
+	// dt = 0.0f;
 
 
 	State state;
@@ -304,7 +319,11 @@ int main() {
 	glfwSetKeyCallback(window.getWindowPointer(), keyboard_callback);
 
 
-	camera.update();
+	//camera.update();
+
+	GLuint floorVAO;
+	glGenVertexArrays(1, &floorVAO);
+
 
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_BLEND);
@@ -312,8 +331,16 @@ int main() {
 	// main loop
 	while (!window.getClosingStatus()) {
 
+		glfwPollEvents();
+
+		// int key = glfwGetKey(window.grtPointer(), GLFW_KEY_W);
+		// if (key == GLFW_PRESS || key == GLFW_REPEAT){
+		// 	camera.moveFront();
+		// }
+
 		camera.translate(2.0f*camera.speed * window.getFrameTime());
 		camera.update();
+		floorShader.setVec3("cameraPos", camera.cameraPos);
 
 		// float t1 = (float)glfwGetTime();
 
@@ -325,16 +352,18 @@ int main() {
 		glClearColor(0.03f, 0.055f, 0.09f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+		//Drawing floor
+		glBindVertexArray(floorVAO);
+		glDrawArrays(GL_TRIANGLES, 0, 6);
 
 		// Draw cube
 		cubeModel.draw();
-		//floorModel.draw();
 		//inosukeModel.draw();
 
 		window.swapBuffers();
-		glfwPollEvents();
 	}
-
+	glDeleteVertexArrays(1, &floorVAO);
+	}
 	// cleanup
 	glfwTerminate();
 	return 0;
